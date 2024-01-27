@@ -12,9 +12,9 @@
     <td align="center"><a href="https://github.com/wjdansrl7"><img src="https://avatars.githubusercontent.com/wjdansrl7" width="100px;" alt=""></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/DDDongyeon"><b>지혁</b></a></td>
-    <td align="center"><a href="https://github.com/hyukji"><b>혜림</b></a></td>
-    <td align="center"><a href="https://github.com/FreshSangchoo"><b>경헌</b></a></td>
+    <td align="center"><a href="https://github.com/hyukji"><b>지혁</b></a></td>
+    <td align="center"><a href="https://github.com/hhh1053"><b>혜림</b></a></td>
+    <td align="center"><a href="https://github.com/yootal"><b>경헌</b></a></td>
     <td align="center"><a href="https://github.com/wjdansrl7"><b>문기</b></a></td>
   </tr>
 </table>
