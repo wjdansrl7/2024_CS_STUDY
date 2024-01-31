@@ -34,7 +34,7 @@
     - 신뢰성 보장에 따른 네트워크 부하
 - **가상 회선 방식**
     
-    ![출처) [https://prinha.tistory.com/entry/Network-패킷교환방식-가상회선방식데이터그램방식](https://prinha.tistory.com/entry/Network-%ED%8C%A8%ED%82%B7%EA%B5%90%ED%99%98%EB%B0%A9%EC%8B%9D-%EA%B0%80%EC%83%81%ED%9A%8C%EC%84%A0%EB%B0%A9%EC%8B%9D%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8%EB%B0%A9%EC%8B%9D)](1%20TCP%20vs%20UDP%2061911b6520fc4f72b2caf16b48334986/Untitled.png)
+    ![출처) [https://prinha.tistory.com/entry/Network-패킷교환방식-가상회선방식데이터그램방식](https://prinha.tistory.com/entry/Network-%ED%8C%A8%ED%82%B7%EA%B5%90%ED%99%98%EB%B0%A9%EC%8B%9D-%EA%B0%80%EC%83%81%ED%9A%8C%EC%84%A0%EB%B0%A9%EC%8B%9D%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8%EB%B0%A9%EC%8B%9D)](images/img1.png)
     
     출처) [https://prinha.tistory.com/entry/Network-패킷교환방식-가상회선방식데이터그램방식](https://prinha.tistory.com/entry/Network-%ED%8C%A8%ED%82%B7%EA%B5%90%ED%99%98%EB%B0%A9%EC%8B%9D-%EA%B0%80%EC%83%81%ED%9A%8C%EC%84%A0%EB%B0%A9%EC%8B%9D%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8%EB%B0%A9%EC%8B%9D)
     
@@ -73,7 +73,7 @@
     - 라우터가 데이터 패킷의 우선순위를 정해야 하는 경우, UDP 패킷보다 TCP 패킷을 먼저 전송할 가능성이 높음
 - **데이터 그램 방식**
     
-    ![출처) [https://prinha.tistory.com/entry/Network-패킷교환방식-가상회선방식데이터그램방식](https://prinha.tistory.com/entry/Network-%ED%8C%A8%ED%82%B7%EA%B5%90%ED%99%98%EB%B0%A9%EC%8B%9D-%EA%B0%80%EC%83%81%ED%9A%8C%EC%84%A0%EB%B0%A9%EC%8B%9D%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8%EB%B0%A9%EC%8B%9D)](1%20TCP%20vs%20UDP%2061911b6520fc4f72b2caf16b48334986/Untitled%201.png)
+    ![출처) [https://prinha.tistory.com/entry/Network-패킷교환방식-가상회선방식데이터그램방식](https://prinha.tistory.com/entry/Network-%ED%8C%A8%ED%82%B7%EA%B5%90%ED%99%98%EB%B0%A9%EC%8B%9D-%EA%B0%80%EC%83%81%ED%9A%8C%EC%84%A0%EB%B0%A9%EC%8B%9D%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8%EB%B0%A9%EC%8B%9D)](images/img2.png)
     
     출처) [https://prinha.tistory.com/entry/Network-패킷교환방식-가상회선방식데이터그램방식](https://prinha.tistory.com/entry/Network-%ED%8C%A8%ED%82%B7%EA%B5%90%ED%99%98%EB%B0%A9%EC%8B%9D-%EA%B0%80%EC%83%81%ED%9A%8C%EC%84%A0%EB%B0%A9%EC%8B%9D%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B7%B8%EB%9E%A8%EB%B0%A9%EC%8B%9D)
     
@@ -89,7 +89,7 @@
 
 ### 요약:
 
-![출처) [https://dev-coco.tistory.com/144](https://dev-coco.tistory.com/144)](1%20TCP%20vs%20UDP%2061911b6520fc4f72b2caf16b48334986/Untitled%202.png)
+![출처) [https://dev-coco.tistory.com/144](https://dev-coco.tistory.com/144)](images/img3.png)
 
 출처) [https://dev-coco.tistory.com/144](https://dev-coco.tistory.com/144)
 
@@ -98,7 +98,12 @@
 *Q) TCP는 패킷을 어떻게 추적 및 관리하나요?*
 
 ```
-위에서 데이터는 패킷단위로 나누어 같은 목적지(IP계층)으로 전송된다고 설명하였습니다. 예를 들어 한줄로 서야하는 A,B,C라는 사람(패킷)들이 서울(발신지)에서 출발하여 부산(수신지)으로 간다고 합시다. 그런데 A,B,C가 순차적으로 가는 상황에서 B가 길을 잘못 들어서 분실되었다고 합시다. 하지만 목적지에서는 A,B,C가 모두 필요한지 모르고 A,C만 보고 다 왔다고 착각할 수 있습니다. 그렇기 때문에 A,,B,C라는 패킷에 1,2,3이라는 번호를 부여하여 패킷의 분실 확인과 같은 처리를 하여 목적지에서 재조립을 합니다. 이런 방식으로 TCP는 패킷을 추적하며, 나누어 보내진 데이터를 받고 조립을 할 수 있습니다.
+위에서 데이터는 패킷단위로 나누어 같은 목적지(IP계층)으로 전송된다고 설명하였습니다. 
+예를 들어 한줄로 서야하는 A,B,C라는 사람(패킷)들이 서울(발신지)에서 출발하여 부산(수신지)으로 간다고 합시다. 
+그런데 A,B,C가 순차적으로 가는 상황에서 B가 길을 잘못 들어서 분실되었다고 합시다. 
+하지만 목적지에서는 A,B,C가 모두 필요한지 모르고 A,C만 보고 다 왔다고 착각할 수 있습니다. 
+그렇기 때문에 A,,B,C라는 패킷에 1,2,3이라는 번호를 부여하여 패킷의 분실 확인과 같은 처리를 하여 목적지에서 재조립을 합니다. 
+이런 방식으로 TCP는 패킷을 추적하며, 나누어 보내진 데이터를 받고 조립을 할 수 있습니다.
 ```
 
 *Q) TCP와 UDP는 왜 나오게 됐는가?*
