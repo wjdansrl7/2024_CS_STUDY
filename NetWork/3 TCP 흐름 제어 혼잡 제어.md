@@ -15,7 +15,7 @@
     - Stop and Wait(정지 대기) : 매번 전송한 패킷에 대해 확인 응답을 받아야만 그 다음 패킷을 전송하는 방법
         - 단점 : 패킷을 하나씩 보내기 때문에 비효율적
         
-        ![출처) [https://yeoneeds.tistory.com/m/25](https://yeoneeds.tistory.com/m/25)](3%20TCP%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5%20&%20%E1%84%92%E1%85%A9%E1%86%AB%E1%84%8C%E1%85%A1%E1%86%B8%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5%207cf1496dafff47d8aedacbabdd7fa8fb/Untitled.png)
+        ![출처) [https://yeoneeds.tistory.com/m/25](https://yeoneeds.tistory.com/m/25)](images/img9.png)
         
         출처) [https://yeoneeds.tistory.com/m/25](https://yeoneeds.tistory.com/m/25)
         
@@ -26,7 +26,7 @@
         - 동작 방식
             - 먼저 윈도우에 포함되는 모든 패킷을 전송하고, 그 패킷들의 전달이 확인(ACK)되는대로 이 윈도우를 옆으로 옮김으로써 그 다음 패킷들을 전송
             
-            ![출처) [https://yeoneeds.tistory.com/m/25](https://yeoneeds.tistory.com/m/25)](3%20TCP%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5%20&%20%E1%84%92%E1%85%A9%E1%86%AB%E1%84%8C%E1%85%A1%E1%86%B8%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5%207cf1496dafff47d8aedacbabdd7fa8fb/Untitled%201.png)
+            ![출처) [https://yeoneeds.tistory.com/m/25](https://yeoneeds.tistory.com/m/25)](images/img10.png)
             
             출처) [https://yeoneeds.tistory.com/m/25](https://yeoneeds.tistory.com/m/25)
             
@@ -46,7 +46,7 @@
         - 공평한 방식으로, 여러 호스트가 한 네트워크를 공유하고 있으면 나중에 진입하는 쪽이 처음에는 불리하지만, 시간이 흐르면 평형상태로 수렴하게 되는 특징이 있다.
         - **문제점:** 초기에 네트워크의 높은 대역폭을 사용하지 못하여 오랜 시간이 걸리게 되고, 네트워크가 혼잡해지는 상황을 미리 감지하지 못한다. 즉, 네트워크가 혼잡해지고 나서야 대역폭을 줄이는 방식이다.
     
-    ![Untitled](3%20TCP%20%E1%84%92%E1%85%B3%E1%84%85%E1%85%B3%E1%86%B7%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5%20&%20%E1%84%92%E1%85%A9%E1%86%AB%E1%84%8C%E1%85%A1%E1%86%B8%20%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%A5%207cf1496dafff47d8aedacbabdd7fa8fb/Untitled%202.png)
+    ![Untitled](images/img11.png)
     
     - Slow Start (느린 시작)
         - AIMD 방식은 네트워크의 수용량 주변에서는 효율적으로 작동하지만, 처음에 전송 속도를 올리는데 시간이 오래 걸리는 단점이 존재
