@@ -10,6 +10,7 @@
 
 > 빅데이터 업체에서 로그, 어제 시청자 통계처럼 다계층적인 데이터를 백엔드 개발자에게 제공해야 한다면 ⇒ GraphQL API를 고려해볼 수 있다.
 
+{과목} {내용} 문서 작성(수정) [이름]
 
 
 # REST(Representational State Transfer)
