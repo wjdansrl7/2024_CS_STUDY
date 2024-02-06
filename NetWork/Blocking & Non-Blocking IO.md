@@ -74,6 +74,7 @@ A 함수가 B 함수를 호출 할 때, B 함수의 결과를 B 함수가 처리
 - IO 지연 초래
 
 ![Alt text](images/동기논블로킹.png)
+
 (EWOULDBLOCK : 입력데이터가 없다는 의미)
 
 
