@@ -67,3 +67,16 @@
 ## 웹통신흐름
 1. 웹 통신흐름의 작동방식을 설명하세요.
 2. 웹이란 무엇인가.
+
+## 프록시 서버
+1. Forward proxy의 장점 가운데 클라이언트 보안이 있는데, 프록시 방화벽과 일반 방화벽과의 차이점은?
+2. Reverse proxy의 장점?
+
+## SOP & CORS
+1. 동일하지 않은 origin은?
+1) http://example.com:80/app1/index.html
+2) http://example.com/app2/index.html
+3) http://example.com
+4) https://example.com
+
+2. Preflight Request는 어떤 HTTP 메소드를 통해 요청이 될까요?
