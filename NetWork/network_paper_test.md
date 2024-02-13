@@ -80,3 +80,30 @@
 4) https://example.com
 
 2. Preflight Request는 어떤 HTTP 메소드를 통해 요청이 될까요?
+
+
+## 네트워크란
+
+- 병목현상(Bottle neck)이란?   
+- Network Bandwitdh은 네트워크의 실질적인 성능을 나타낸다(o, x). o/x에 대한 이유도 같이 적으시오.
+
+## OSI 7계층
+
+- Network Layer 가 가지는 역할은 무엇인지 설명하시오.
+- 캡슐화는 데이터를 수신받을 때 사용된다(O, X)
+
+## REST API
+
+- REST는 HTTP URI를 통해 자원을 명시하고 HTTP Method를 통해 해당 자원에 대한 CRUD Operation을 적용하는 것을 의미한다 (O, x)
+
+- 다음 중 REST API 설계 규칙에 따른 예시로 적절한 것은?
+1) http://khj93.com/test/  
+2) http://khj93.com/test_blog
+3) http://khj93.com/photo.jpg  
+4) http://khj93.com/post/1  
+
+## Blocking & Non Blocking IO
+
+- Blocking은 A 함수가 B 함수를 호출 할 때, B 함수가 자신의 작업이 종료되기 전까지 A 함수에게 제어권을 돌려주지 않는 것을 말한다.(O, X)
+
+- IO 시간 동안 다른 일을 수행하고 싶다면, Sync-Blocking 을 사용하면 된다.(O, X)
