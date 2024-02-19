@@ -154,7 +154,8 @@ size가 작은 Segment를 사용하면 유연하게 메모리를 구성할 수 �
 - 메모리 크기가 다 찼을 때, 프로세스를 실행시킬 수 있도록 도와주는 스와핑(swapping) 방법과
 - 메모리 크기보다 크기가 큰 프로세스를 실행시킬 수 있게 해주는 가상 메모리(virtual memory)
 <img src="https://github.com/wjdansrl7/2024_CS_STUDY/assets/48114924/18c4e0e3-0836-45ce-ba73-3789d8997680" width="500"/>
-<img width="468" alt="Untitled 14" src="https://github.com/wjdansrl7/2024_CS_STUDY/assets/48114924/75861278-ec12-48fa-83a1-a7e6ea627e27">
+<br/>
+<img width="500" alt="Untitled 14" src="https://github.com/wjdansrl7/2024_CS_STUDY/assets/48114924/75861278-ec12-48fa-83a1-a7e6ea627e27">
 
 - 예시) IO 발생 -> 하나의 프로세스가 block 상태 -> disk(HDD, SSD)로 다시 보냄(cpu에서 쓰지 못하니까)
 - memory에 있어도 되는데 새로운 D가 들어오니까 수행이 완료되면 A 다시 돌아옴
