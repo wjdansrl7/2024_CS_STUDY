@@ -62,11 +62,21 @@ paging은 고정된 페이지 크기를 사용하여 메모리 관리가 편하�
     
     ### Inverted page tables
     
-    VPN > PFN으로 변환하는 것은 virtual address space가 너무 커서 어렵고 복잡하다.
+   ![Untitled](images/SmallerTable3.png)
+     page table은 한 프로세스당 page table을 가지고 있어야 하기 때문에, 사용되지 않는 page가 있더라도 page의 최대개수만큼 page table entry를 가지고있어야했다.
     
-    그래서  거꾸로 접근해서 PFN에서 VPN를 역으로 찾아보는 방식이 Inverted page tables이다.
+    Inverted page table로 이 문제 해결
     
-    ( O(1)으로 검색할 수 있는 해시 테이블을 사용 )
+    역페이지 테이블은 물리 메모리를 그대로 사상하고 있으며, 모든 프로세스가 하나의 페이지 테이블을 참조한다. → 페이지 테이블의 entry개수는 물리 메모리의 frame 개수와 동일하며 고정되어 있다.
+    
+    모든 프로세스가 역페이지 테이블을 참조하기 때문에, 어떤 프로세스의 사상 정보를 가지고 있는지 구분하기 위해 pid를 함께 사용하여 참조한다. 0번째 entry부터 순차적으로 pid와 page number를 비교하며 탐색하며, 일치하는 page table entry를 발견했을 때의 인덱스가 곧 frame number가 된다. 역페이지 테이블이 물리 메모리를 그대로 사상했기 때문에, i번째 index가 i번째 frame number와 동일하기 때문. 
+    
+    페이지를 고정크기로 관리하며, 페이지 테이블의 크기를 줄일 수 있다는 장점을 가지고 있다.
+    
+    문제점
+    
+    기존에 page table에서 entry를 인덱싱하는 방식과달리, pid와 page number를 비교하며 순차 탐색하기 때문에 O(n)만큼의 시간 복잡도가 소요된다. 
+
     
     참고자료
     
@@ -75,3 +85,5 @@ paging은 고정된 페이지 크기를 사용하여 메모리 관리가 편하�
     [https://rond-o.tistory.com/267](https://rond-o.tistory.com/267)
     
     [https://icksw.tistory.com/150](https://icksw.tistory.com/150)
+    
+    [https://itstory1592.tistory.com/103](https://itstory1592.tistory.com/103)
