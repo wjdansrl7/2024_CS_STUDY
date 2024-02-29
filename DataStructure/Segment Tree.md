@@ -21,6 +21,7 @@
 int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 ```
 
+
 ### 트리 클래스 생성 및 트리 생성
 
 ![Untitled](images/SegmentTree2.png)
@@ -54,6 +55,7 @@ class SegmentTree{
 }
 ```
 
+
 ### 세그먼트 트리로 구간 합 구하기
 
 ![Untitled](images/SegmentTree3.png)
@@ -79,7 +81,8 @@ public long sum(int node, int start, int end, int left, int right){
 }
 ```
 
-###세그먼트 트리에서 데이터 변경하기
+
+### 세그먼트 트리에서 데이터 변경하기
 
 ![Untitled](images/SegmentTree4.png)
 
