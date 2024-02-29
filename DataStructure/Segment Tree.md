@@ -79,7 +79,7 @@ public long sum(int node, int start, int end, int left, int right){
 }
 ```
 
-세그먼트 트리에서 데이터 변경하기
+###세그먼트 트리에서 데이터 변경하기
 
 ![Untitled](images/SegmentTree4.png)
 
@@ -102,6 +102,8 @@ public void update(int node, int start, int end, int idx, long diff){
     }
 }
 ```
+
+
 
 참고자료
 
