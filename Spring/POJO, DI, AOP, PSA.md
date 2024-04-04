@@ -64,7 +64,7 @@ public class PersonService {
 
 ![s_img03.PNG](images/s_img03.PNG)
 
-![출처) [https://www.youtube.com/watch?v=1vdeIL2iCcM](https://www.youtube.com/watch?v=1vdeIL2iCcM)](images/s_img02.png)
+![출처) [https://www.youtube.com/watch?v=1vdeIL2iCcM](https://www.youtube.com/watch?v=1vdeIL2iCcM)](images/s_img02.PNG)
 
 출처) [https://www.youtube.com/watch?v=1vdeIL2iCcM](https://www.youtube.com/watch?v=1vdeIL2iCcM)
 
