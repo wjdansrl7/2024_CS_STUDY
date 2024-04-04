@@ -4,7 +4,7 @@
 
 ## Model, View, Controller의 관계
 
-![MVC](/ModelViewControllerDiagram.png)
+![MVC](/Spring/images/ModelViewControllerDiagram.png)
 
 1.  사용자의 요청을 controller가 받는다.
 2.  Controller가 Service에서 비즈니스 로직을 처리한 후 결과를 Model에 담는다.
@@ -12,7 +12,7 @@
 
 ## Controller
 
-> Controller는 Model과 View사이에서 데이터 흐름을 제어한다.
+- Controller는 Model과 View사이에서 데이터 흐름을 제어한다.
 
 ### 규칙
 
@@ -65,7 +65,7 @@
 
 2. 코드의 재사용성 및 확장성
 
-   > Model과 Controller는 여러 View에서 재사용할 수 있고, view의 경우도
+   > Model과 Controller는 여러 View에서 재사용할 수 있고, view의 경우도 마찬가지.
 
 3. 서비스 유지보수 및 테스트에 용이
 4. 개발자 간의 커뮤니케이션 효율성이 증가
@@ -78,7 +78,7 @@
 
 2. Controller의 비중이 높아져 부담이 커진다면 `Massive-View-Controller` 현상을 피할 수 없다.
 
-   ![MVC](/Massive-view-controller.png)
+   ![MVC](/Spring/images/Massive-view-controller.png)
 
    > 다수의 View와 Model이 Controller를 통해 복잡하게 연결될 수 있기 때문에 Controller가 뚱뚱해지게 되는 Massive ViewController(대규모 MVC 어플리케이션)가 되어버립니다.
 

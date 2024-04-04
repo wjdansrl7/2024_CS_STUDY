@@ -67,7 +67,7 @@ Spring DI 컨테이너가 관리하는 객체를 Spring Bean이라고 한다. �
 
 빈을 요청할 때마다 새로운 빈을 반환하며, 그 이후 빈의 관리 책임은 요청한 클라이언트에게 있다.
 
-![alt text](Bean_proto.png)
+![alt text](/Spring/images/Bean_proto.png)
 
 - request
 
