@@ -62,7 +62,7 @@ public class PersonService {
 
 ## IoC(**Inversion of Control)**
 
-![s_img03.PNG](images/s_img03.png)
+![s_img03.PNG](images/s_img03.PNG)
 
 ![출처) [https://www.youtube.com/watch?v=1vdeIL2iCcM](https://www.youtube.com/watch?v=1vdeIL2iCcM)](images/s_img02.png)
 
@@ -103,13 +103,13 @@ public class PersonService {
 
 1. **주요 용어**
 
-![출처) [https://adjh54.tistory.com/133](https://adjh54.tistory.com/133)](images/s_img05.png)
+![출처) [https://adjh54.tistory.com/133](https://adjh54.tistory.com/133)](images/s_img05.PNG)
 
 출처) [https://adjh54.tistory.com/133](https://adjh54.tistory.com/133)
 
 1. **주요 어노테이션**
 
-![출처) [https://adjh54.tistory.com/133](https://adjh54.tistory.com/133)](images/s_img06.png)
+![출처) [https://adjh54.tistory.com/133](https://adjh54.tistory.com/133)](images/s_img06.PNG)
 
 출처) [https://adjh54.tistory.com/133](https://adjh54.tistory.com/133)
 
