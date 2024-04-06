@@ -59,7 +59,23 @@
 
 ## 📚 학습 주제
 
-## 📌 자료구조
+## 📌 Algorithm & Data Structure
+- [해시](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/Hash.md)
+- [Map](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/Map.md)
+- [이분탐색](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/%EC%9D%B4%EB%B6%84%ED%83%90%EC%83%89.md)
+- [List](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/List.md)
+- [트라이](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/%ED%8A%B8%EB%9D%BC%EC%9D%B4.md)
+- [분할 정복](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/%EB%B6%84%ED%95%A0%EC%A0%95%EB%B3%B5.md)
+- [세그먼트 트리](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/Segment%20Tree.md)
+- [Queue](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/Queue.md)
+- [SET](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/Set.md)
+- [거품 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/BubbleSort.md)
+- [계수 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/%EA%B3%84%EC%88%98%EC%A0%95%EB%A0%AC.md)
+- [기수 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/%EA%B8%B0%EC%88%98%EC%A0%95%EB%A0%AC.md)
+- [삽입 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/InsertionSort.md)
+- [선택 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/SelectionSort.md)
+- [힙 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/HeapSort.md)
+- [퀵 정렬, 합병 정렬](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DataStructure/Merge%20Sort%20%26%20Quick%20Sort.md)
 
 ## 📌 네트워크
 - [네트워크란?](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/NetWork/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EB%9E%80.md)
@@ -81,14 +97,48 @@
 - [SOP & CORS](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/NetWork/SOP%26CORS.md)
 
 ## 📌 운영체제
+- [운영체체란? 역할과 구조](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80%2C%20%EC%97%AD%ED%95%A0%EA%B3%BC%20%EA%B5%AC%EC%A1%B0.md)
+- [메모리 계층](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EB%A9%94%EB%AA%A8%EB%A6%AC%20%EA%B3%84%EC%B8%B5.md)
+- [프로세스와 스레드](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80%20%EC%8A%A4%EB%A0%88%EB%93%9C.md)
+- [CPU 스케줄링 알고리즘](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98.md)
+- [인터럽트](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/Interrupt.md)
+- [시스템 콜](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/SystemCall.md)
+- [PCB와 Context Switching](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/PCB%20%26%20ContextSwitching.md)
+- [주소 공간과 가상 메모리, 페이징](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20%ED%8E%98%EC%9D%B4%EC%A7%95.md)
+- [주소 변환(Address Translation)](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EC%A3%BC%EC%86%8C%EB%B3%80%ED%99%98.md)
+- [세그멘테이션(Segmentation)](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/Segmentation.md)
+- [가상메모리와 요구 페이징, 페이지 교체](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EA%B0%80%EC%83%81%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%99%80%20%ED%8E%98%EC%9D%B4%EC%A7%95.md)
+- [TLB(Translation Lookaside Buffers)](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/TLB.md)
+- [Paging: Smaller Table](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/Paging%20Smaller%20Table.md)
+- [동기화(스핀락, 세마포어, 뮤텍스)](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EB%8F%99%EA%B8%B0%ED%99%94(%EC%8A%A4%ED%95%80%EB%9D%BD%2C%20%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4%2C%20%EB%AE%A4%ED%85%8D%EC%8A%A4).md)
+- [교착상태(DeadLock)](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%EA%B5%90%EC%B0%A9%EC%83%81%ED%83%9C(Deadlock).md)
+- [IPC](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/IPC.md)
+- [파일시스템](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
+
+## 📌 Java & Spring
+- [웹 어플리케이션 이해]
+- [서블릿]
+- [JSP]
+- [MVC 패턴]
+- [PSA, IoC, AOP, POJO]
+- [JPA와 Hibernate]
+- [영속성 컨텍스트]
+- [Bean(Scope)]
+- [Eager, Lazy Loading]
+- [N+1 문제]
+- [다대다 해결 전략]
+- [@Valid를 사용한 DTO 검증]
+- [프록시]
+- [@Autowired 주입 방법별 차이]
+- [Web MVC 요청 처리 과정(DispatcherServlet을 중심으로)
+- [@Controller @RestController]
 
 ## 📌 데이터베이스
 
 ## 📌 Design Pattern
 
-## 📌 Algorithm
 
-## 📌 Java & Spring
+
 
 ## 📌 보안
 
