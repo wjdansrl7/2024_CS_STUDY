@@ -4,7 +4,7 @@
 2. 실제 오브젝트의 타겟은 프록시를 통해 최종적으로 요청받아 처리
 3. 타겟은 자신의 기능에만 집중하고 부가기능은 프록시에게 위임
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041101.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041101.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
@@ -48,11 +48,11 @@ TestEventService의 createEvent 메서드와 publishEvent 메서드에 동일한
 - Invocation Handler → 중복 코드 제거
     - Reflection API : 구체적인 클래스 타입을 알지 못해도 런타임에 클래스의 정보에 접근할 수 있게 해주는 자바 API, 외부 라이브러리에 의존 X, **성능상 느리다**
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041108.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041108.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041110.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041110.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
@@ -69,11 +69,11 @@ TestEventService의 createEvent 메서드와 publishEvent 메서드에 동일한
 - 바이트 코드를 조작해서 프록시 생성
 - MethodInterceptor를 재정의한 intercept를 구현해야 부가기능이 추가된다.
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041109.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041109.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041111.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041111.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
@@ -92,9 +92,9 @@ TestEventService의 createEvent 메서드와 publishEvent 메서드에 동일한
 1. 메소드가 처음 호출되었을 때 동적으로 타겟 클래스의 바이트 코드 조작
 2. 이후 호출시엔 조작된 바이트 코드를 재사용
 
-![041102.PNG](images/041102.png)
+![041102.PNG](images/041102.PNG)
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041113.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041113.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
@@ -102,7 +102,7 @@ TestEventService의 createEvent 메서드와 publishEvent 메서드에 동일한
 
 이유) 인터페이스 기반 프록시는 때때로 ClassCast Exceptions를 추적하기 어렵게 한다.
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041112.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041112.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
@@ -119,11 +119,11 @@ TestEventService의 createEvent 메서드와 publishEvent 메서드에 동일한
 
 **InvocationHandler는 타겟의 정보 가지고 있어야한다. (의존적) 필드로 가져야한다.**
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041115.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041115.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
-![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041114.png)
+![출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)](images/041114.PNG)
 
 출처) [https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=우아한테크](https://www.youtube.com/watch?v=MFckVKrJLRQ&ab_channel=%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC)
 
