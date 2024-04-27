@@ -36,3 +36,35 @@
 2. 인증과 인가의 정의를 쓰세요
 3. spring security에서 Principal 객체란?
 4. spring security는 OO기반으로 동작한다.
+
+# 웹 애플리케이션 이해
+
+1. WS와 WAS의 차이를 알려주세요.
+
+2. 스레드 풀에 대해 설명하고, 사용시 얻을 수 있는 효과를 알려주세요.
+
+# POJO, PSA, IoC, AOP
+
+1. IoC/DI에 대해 간단히 설명해주세요.
+
+2. AOP에 대해 간단히 설명해주세요.
+
+3. PSA에 대해 간단히 설명해주세요.
+
+# Proxy
+
+1. Proxy객체에 대해 간단히 설명해주세요.
+
+2. Proxy의 사용 목적을 알려주세요.
+
+# @Autowired
+
+1. @Autowired 방법 3가지를 알려주세요.
+
+2. 위의 3가지 중 주로 쓰는 방식이 무엇인지와 쓰는 이유를 알려주세요.
+
+# Spring vs Spring Boot
+
+1. Spring의 개선할 점 2가지를 알려주세요.
+
+2. SpringBoot 사용시 얻을 수 있는 장점 2가지를 알려주세요.
