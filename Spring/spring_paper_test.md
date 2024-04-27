@@ -37,6 +37,7 @@
 3. spring security에서 Principal 객체란?
 4. spring security는 OO기반으로 동작한다.
 
+
 # 웹 애플리케이션 이해
 
 1. WS와 WAS의 차이를 알려주세요.
@@ -62,9 +63,6 @@
 1. @Autowired 방법 3가지를 알려주세요.
 
 2. 위의 3가지 중 주로 쓰는 방식이 무엇인지와 쓰는 이유를 알려주세요.
-
-
-
 
 # Spring vs Spring Boot
 
