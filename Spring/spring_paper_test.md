@@ -91,3 +91,35 @@
 
 2. 인터셉터의 메소드 가운데, 컨트롤러가 호출되기 전에 실행이 되며, 컨트롤러 이전에 처리해야 하는 전처리
 작업이나 요청 정보를 가공하거나 추가하는 경우에 사용되는 메소드는 무엇인가?
+
+
+# MVC 패턴
+
+1. MVC 패턴을 간략하게 설명하시오
+
+2. MVC의 장점과 한계는 어떻게 되나요?
+
+# @Controller @RestController
+
+1. @Controller @RestController의 차이는 뭔가요?
+
+2. @RestController는 @Controller와의 차이를 만들어내는 @의 이름은?
+
+# Web MVC 요청 처리 과정
+
+1. DispatcherServlet은 무슨 역할하고 있나요?
+
+
+2. HanlderMapping, DispatcherServlet, viewResolver, HandlerAdaptor 를 처리 순서대로 정렬해주세요.
+
+# Bean(Scope)
+
+1. bean 등록 방법은 어떻게 있나요?
+
+2. Bean의 Scope는 어떤 것들이 있나요? default는 무엇인가요?
+
+# JPA의 캐시
+
+1. 1차 캐시는 어디에 존재하나요?  -> "1차 캐시는 __________ 내부에 존재"
+
+2. 1차 캐시와 달리 2차 캐시를 이용하면 DB접근 횟수 줄이기가 가능하다고 하는 데 이유가 무엇인가요?

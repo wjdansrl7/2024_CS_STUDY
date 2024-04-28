@@ -84,3 +84,41 @@ WAS는 애플리케이션 로직을 실행하는데 더 특화된 서버, 자바
 
 1. 서블릿 컨테이너, 스프링 컨테이너
 2. preHandle()
+
+
+
+# MVC 패턴
+
+1. Model, View, Controller의 약자로, 하나의 어플리케이션이나 프로젝트를 구성할때 구성요소를 세가지 역할로 구분한 패턴이다.
+
+2. 
+장점 : 관심사의 분리, 코드의 재사용성과 확장성 증가, 서비스 유지보수 테이스테 유리
+한계 : M, V의 의존성을 완전히 분리할 수 없다, Controller의 비중이 높아진다면 `Massive-View-Controller` 현상을 피할 수 없다.
+
+# @Controller @RestController
+
+1. @Controller는 주로 View를 반환하기 위해 쓰인다. 반면에 @RestController JSON 형태로 객체 데이터를 반환한다.
+
+2. @ResponseBody
+
+# Web MVC 요청 처리 과정
+
+1. 사용자의 요청에 맞는 handler(Controller)와 이를 실행할 handlerAdaptor를 찾아주고 실행한 결과를 반환해준다.
+
+
+2. DispatcherServlet -> HanlderMapping -> HandlerAdaptor -> viewResolver
+
+# Bean(Scope)
+
+1. 
+- @ComponentScan, @Component 사용하는 방법
+- 빈 설정 파일에 직접 등록하는 방법(@Bean)
+
+2. singleton, prototype, request, session / singleton이 default이다.
+
+# JPA의 캐시
+
+1. 1차 캐시는 어디에 존재하나요?  -> "1차 캐시는 영속성 컨텍스트 내부에 존재"
+
+2. 
+1차 캐시는 영속성 컨텍스트 내에 존재해 하나의 요청안에서만 처리가 된다. 하지만 2차캐시는 appliction 범위내에서 동작하기에 Application이 종료될 때까지 캐시가 유지된다.
