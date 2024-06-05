@@ -116,26 +116,45 @@
 - [파일시스템](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Operating%20System/%ED%8C%8C%EC%9D%BC%EC%8B%9C%EC%8A%A4%ED%85%9C.md)
 
 ## 📌 Java & Spring
-- [웹 어플리케이션 이해]
-- [서블릿]
-- [JSP]
-- [MVC 패턴]
-- [PSA, IoC, AOP, POJO]
+- [웹 어플리케이션 이해](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%9D%B4%ED%95%B4.md)
+- [서블릿](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/servlet.md)
 - [JPA와 Hibernate]
-- [영속성 컨텍스트]
-- [Bean(Scope)]
-- [Eager, Lazy Loading]
-- [N+1 문제]
-- [다대다 해결 전략]
-- [@Valid를 사용한 DTO 검증]
-- [프록시]
-- [@Autowired 주입 방법별 차이]
-- [Web MVC 요청 처리 과정(DispatcherServlet을 중심으로)
-- [@Controller @RestController]
+- [JSP](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/JSP.md)
+- [MVC 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)
+- [PSA, IoC, AOP, POJO](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/POJO%2C%20DI%2C%20AOP%2C%20PSA.md)
+- [JPA 캐시](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/JPA%EC%BA%90%EC%8B%B1.md)
+- [영속성 컨텍스트](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8.md)
+- [Bean(Scope)](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Bean%20Scope.md)
+- [Eager, Lazy Loading](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Eager_LazyLoading.md)
+- [N+1 문제](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/N%2B1.md)
+- [다대다 해결 전략](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%EB%8B%A4%EB%8C%80%EB%8B%A4%20%ED%95%B4%EA%B2%B0%EC%A0%84%EB%9E%B5.md)
+- [@Valid를 사용한 DTO 검증](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%40valid%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%9C%20dto%EA%B2%80%EC%A6%9D.md)
+- [프록시](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Proxy.md)
+- [@Autowired 주입 방법별 차이](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%40Autowired.md)
+- [Web MVC 요청 처리 과정(DispatcherServlet을 중심으로](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Web%20MVC%20%EC%9A%94%EC%B2%AD%20%EC%B2%98%EB%A6%AC%20%EA%B3%BC%EC%A0%95.md)
+- [@Controller @RestController](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%40Controller%EC%99%80%20%40RestController.md)
+- [Filter, Interceptor](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Filter_Interceptor.md)
+- [Spring vs Spring boot](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Spring%20vs%20Spring%20Boot.md)
+- [Spring Security 개념, 인증 처리 과정](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/Spring%20Security%20%EA%B0%9C%EB%85%90%EA%B3%BC%20%EC%9D%B8%EC%A6%9D%EC%B2%98%EB%A6%AC%20%EA%B3%BC%EC%A0%95.md)
 
 ## 📌 데이터베이스
-
+- [B-tree, B+tree](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/B-tree%2C%20B%2Btree.md)
+- [clustering, replication, sharding](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/Clustering_replication_sharding.md)
+- [transaction과 ACID 개념](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%EA%B3%BC%20ACID%20%EA%B0%9C%EB%85%90.md)
+- [concurrency control](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/ConcurrencyControl.md)
+- [connection pool](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/connectionPool.md)
+- [isolation level](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/isolation_level.md)
+- [precedure, trigger](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/procedureTrigger.md)
+- [redis](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DB/Redis.md)
 ## 📌 Design Pattern
+- [데코레이터 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0(decorator)%ED%8C%A8%ED%84%B4.md)
+- [싱글톤 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%EC%8B%B1%EA%B8%80%ED%86%A4(Singleton)%20%ED%8C%A8%ED%84%B4.md)
+- [어댑터 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%EC%96%B4%EB%8C%91%ED%84%B0(Adapter)%20%ED%8C%A8%ED%84%B4.md)
+- [옵저버 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%EC%98%B5%EC%A0%80%EB%B2%84(Observer)%20%ED%8C%A8%ED%84%B4.md)
+- [전략 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%EC%A0%84%EB%9E%B5%20%ED%8C%A8%ED%84%B4(Strategy).md)
+- [컴포지트 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%EC%BB%B4%ED%8F%AC%EC%A7%80%ED%8A%B8%20%ED%8C%A8%ED%84%B4.md)
+- [템플릿 메소드 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%ED%85%9C%ED%94%8C%EB%A6%BF%20%EB%A9%94%EC%86%8C%EB%93%9C%20%ED%8C%A8%ED%84%B4.md)
+- [프록시 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/DesignPattern/%ED%94%84%EB%A1%9D%EC%8B%9C(Proxy)%20%ED%8C%A8%ED%84%B4.md)
 
 
 
