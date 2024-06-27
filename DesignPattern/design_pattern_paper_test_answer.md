@@ -59,3 +59,16 @@
 1. 재사용성, 메서드
 2. 요청의 캡슐화, 확장성, 히스토리 및 로그 관리, 작업의 취소 및 재실행, 명령 큐잉 및 매크로 명령
 
+## 팩토리 패턴
+1. OCP
+2. 
+``` java
+public class client {
+
+    public static void main(String[] args) {
+        // hint : 팩토리 패턴을 이용한다. 팩토리를 만저 만들고 해당 팩토리에서 객체를 만들면 됨.
+        UserFactory userFactory = new NaverUserFactory();
+        User user = userFactory.newInstance();
+    }
+}
+```
