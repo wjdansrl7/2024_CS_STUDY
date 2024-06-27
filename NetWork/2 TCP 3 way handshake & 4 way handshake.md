@@ -45,6 +45,26 @@
 
 출처) [https://dev-coco.tistory.com/144](https://dev-coco.tistory.com/144)
 
+### 추가
+#### Q. 4Way Handshake 사용이유
+
+A.데이터 유실을 방지하기 위함이다.
+만약 클라이언트가 서버에 연결 해제 요청을 전송하고 서버 측에서 한 번에 연결이 해제된다면, 아직 네트워크 내에 즉, 가상 회선 내에 아직 서버에 도달하지 못한 패킷이 존재한다면 이 패킷은 유실될 가능성이 매우 높을 것이다.
+클라이언트가 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송으로 서버 측에 늦게 도착하는 상황에서 패킷이 유실되는 것을 방지하기 위해 4-Way-Handshake는 4 단계 방식과 함께 TIME_WAIT라는 상태를 제공한다.
+
+#### Q. TCP의 연결 설정 과정(3단계)과 연결 종료 과정(4단계)이 단계가 차이나는 이유?
+
+A. Client가 데이터 전송을 마쳤다고 하더라도 Server는 아직 보낼 데이터가 남아있을 수 있기 때문에 일단 FIN에 대한 ACK만 보내고, 데이터를 모두 전송한 후에 자신도 FIN 메시지를 보내기 때문이다.
+
+#### Q. 만약 Server에서 FIN 세그먼트를 전송하기 전에 전송한 패킷이 Routing 지연이나 패킷 유실로 인한 재전송 등으로 인해 FIN 패킷보다 늦게 도착하는 상황이 발생하면 어떻게 될까?
+
+A. Client에서 세션을 종료시킨 후 뒤늦게 도착하는 패킷이 있다면 이 패킷은 Drop되고 데이터는 유실될 것이다.
+이러한 현상에 대비하여 Client는 Server로부터 FIN을 수신하더라도 일정시간(디폴트 240초) 동안 세션을 남겨놓고 잉여 패킷을 기다리는 과정을 거치게 되는데 이 과정을 "TIME_WAIT" 라고 함.
+
+### 질문
+1. 3way handshake과정에 대해 설명하세요
+2. 4way handshake를 사용하는 이유에 대해 설명하세요
+
 ### ref)
 
 [https://dev-coco.tistory.com/144](https://dev-coco.tistory.com/144)
@@ -52,3 +72,7 @@
 [https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer Science/Network/TCP 3 way handshake %26 4 way handshake.md](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Network/TCP%203%20way%20handshake%20%26%204%20way%20handshake.md)
 
 [https://inpa.tistory.com/entry/NW-🌐-아직도-모호한-TCP-UDP-개념-❓-쉽게-이해하자](https://inpa.tistory.com/entry/NW-%F0%9F%8C%90-%EC%95%84%EC%A7%81%EB%8F%84-%EB%AA%A8%ED%98%B8%ED%95%9C-TCP-UDP-%EA%B0%9C%EB%85%90-%E2%9D%93-%EC%89%BD%EA%B2%8C-%EC%9D%B4%ED%95%B4%ED%95%98%EC%9E%90)
+
+https://hpjang.tistory.com/4
+
+https://toki0411.tistory.com/64
