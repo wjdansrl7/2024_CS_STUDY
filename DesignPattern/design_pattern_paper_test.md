@@ -58,3 +58,75 @@
 1. 커맨드 패턴은 실행될 기능을 캡슐화함으로써 주어진 여러 기능을 실행할 수 있는 OOOO이 높은 클래스로 설계하는 패턴이며, 객체의 행위(OOO)를 클래스로 만들어 캡슐화하는 패턴인데, 해당 빈칸에 해당하는 단어들을 작성해주세요.
 2. 커맨드 패턴의 장점을 얘기해주세요.
 
+### 팩토리 패턴
+
+Q1. 다음 코드는 객체지향의 어떤 원칙을 위배하고 있나요?
+
+```java
+public interface Pet {
+
+    enum Type {
+        Cat, Dog
+    }
+}
+
+public class PetFactory {
+
+    public Pet generatePet(Pet.Type petType) {
+        return switch (petType) {
+            case CAT -> new Cat();
+            case DOG -> new Dog();
+            default -> throw new IllegalArgumentException();
+        };
+    }
+}
+```
+
+
+
+
+Q2. NaverUser를 팩토리 패턴을 이용해서 만들고 싶을때, client 에서는 어떤 식으로 만들 수 있나요. 코드 작성!
+
+```java
+public interface User {
+
+    void signup();
+}
+
+public class NaverUser implements User {
+
+    @Override
+    public void signup() {
+        System.out.println("네이버 아이디로 가입");
+    }
+}
+
+public abstract class UserFactory {
+
+    public User newInstance() {
+        User user = createUser();
+        user.signup();
+        return user;
+    }
+
+    protected abstract User createUser();
+}
+
+public class NaverUserFactory extends UserFactory {
+
+    @Override
+    protected User createUser() {
+        return new NaverUser();
+    }
+}
+```
+
+``` java
+public class client {
+
+    public static void main(String[] args) {
+        // hint : 팩토리 패턴을 이용한다. 팩토리를 만저 만들고 해당 팩토리에서 객체를 만들면 됨.
+        // TODO
+    }
+}
+```
