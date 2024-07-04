@@ -92,6 +92,62 @@ SSL/TLS HandShake
 <br/><br/>
 11. 이렇게 얻은 대칭 키를 활용하여 서로가 서로의 데이터를 안전하게 복호화 하면서 통신할 수 있다. (SSL Handshake 종료)
 <br/><br/><br/>
+
+## 추가
+## SSL 인증서와 SSL 핸드셰이크에 탑재된 기술
+- 대칭키 암호화 방식
+- 비대칭키 암호화 방식
+- 통신 대상을 서로가 확인하는 신분 확인
+- 믿을 수 있는 SSL 인증서를 위한 디지털 서명
+- 디지털 서명을 해주는 인증 기관의 확인
+- 공개키를 안전하게 전달하고 공유하기 위한 프로토콜
+- 암호화된 메시지의 변조 여부를 확인하는 메시지 무결성 알고리즘
+
+![ssl01](https://github.com/wjdansrl7/2024_CS_STUDY/assets/92325898/c1b8511e-4b85-4648-b6e4-1111010d4019)
+출처) [https://yozm.wishket.com/magazine/detail/1852/](https://yozm.wishket.com/magazine/detail/1852/)
+
+1. ① 클라이언트: 클라이언트에 해당하는 브라우저가 먼저 웹 서버에 접속(Client Hello)
+    - 브라우저가 사용하는 SSL 혹은 TLS 버전 정보
+    - 브라우저가 지원하는 암호화 방식 모음(Cipher suite : 보안의 목표를 이루기 위해     사용하는 방식을 패키지의 형태로 묶어 놓은 것)
+        - 보안의 목표:
+            - 안전한 키 교환
+            - 전달 대상 인증
+            - 암호화 알고리즘
+            - 메시지 무결성 확인 알고리즘
+    - 브라우저가 순간적으로 생성한 임의의 난수(숫자)
+    - 만약 이전에 SSL 핸드셰이크가 완료된 상태라면, 그때 생성된 세션 아이디(Session     ID)
+    - 기타 정보
+</br>
+</br>
+
+2. ② 웹 서버는 ①번에 응답하면서 아래의 정보를 클라이언트에 제공(Server Hello)
+    - 브라우저의 암호화 방식 정보 중에서 서버가 지원하고 선택한 암호화 방식(cipher  suite)
+    - 서버의 공개키가 담긴 SSL 인증서, 인증서는 CA의 비밀키(개인키)로 암호화돼  발급된 상태
+    - 서버가 순간적으로 생성한 임의의 난수(숫자)
+    - 클라이언트 인증서 요청(선택사항)
+</br>
+</br>
+
+3. ③ 브라우저는 서버의 SSL 인증서가 올바른지 확인
+    - 대부분 브라우저에는 공신력있는 CA들의 정보와 CA가 만든 공개키가 이미 설치되어     있다. 서버가 보낸 SSL 인증서가 정말 CA가 만든 것인지 확인하기 위해, 내장된 CA   공개키로 암호화된 인증서를 복호화한다. 정상적으로 복호화됐다면 CA가 발급한 것이   증명된다. 만약 등록된 CA가 아니거나, 등록된 CA가 만든 인증서처럼 꾸몄다면 이  과정에서 발각이 되며 브라우저 경고를 보낸다.
+</br>
+</br>
+
+4. ④ 브라우저는 자신이 생성한 난수와 서버의 난수를 사용하여 premaster secret을 만든다.
+    - 웹 서버 인증서에서 딸려 온 웹 사이트의 공개키로 이것을 암호화하여 서버로 전송한다.
+</br>
+</br>
+
+5. ⑤ 서버는 사이트의 비밀키로, 브라우저가 보낸 premaster secret 값을 복호화 한다.
+    - 클라이언트와 서버 모두 premaster secret을 가지게 되고, 각자 일련의 과정을     거쳐 premaster secret으로 부터 master secret을 얻게된다.
+    - master secret는 방금 브라우저와 만들어진 연결에 고유한 값을 부여하기 위한     세션키를 생성한다(세션키는 대칭키 암호화에 사용할 키). 이것을 활용하여 브라우저와   서버 사이에 주고받는 데이터를 암호화, 복호화한다. 
+</br>
+</br>
+
+6. ⑥ SSL 핸드셰이크를 종료하고 HTTPS 통신을 시작한다.
+    - HTTPS 통신이 완료되는 시점에서 서로에게 공유된 세션키를 폐기
+    - 만약 세션이 여전히 유지되고 있다면 브라우저는 SSL 핸드셰이크 요청이 아닌  Session ID만 서버에게 알려주면 된다.
+
 참고자료
 - https://wangin9.tistory.com/entry/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90-URL-%EC%9E%85%EB%A0%A5-%ED%9B%84-%EC%9D%BC%EC%96%B4%EB%82%98%EB%8A%94-%EC%9D%BC%EB%93%A4-5TLSSSL-Handshake <br/>
 - https://www.ssl.com/article/ssl-tls-handshake-ensuring-secure-online-interactions/ <br/>
@@ -99,3 +155,8 @@ SSL/TLS HandShake
 - https://steady-coding.tistory.com/512 <br/>
 - https://kanoos-stu.tistory.com/46 <br/>
 - https://powerdmarc.com/ko/difference-between-ssl-and-tls/ <br/>
+- https://yozm.wishket.com/magazine/detail/1852/
+
+### 면접 대비 질문
+
+##### Q1. SSL 핸드 셰이크 과정에 대해 설명해주세요.
