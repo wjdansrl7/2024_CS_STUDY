@@ -118,7 +118,7 @@
 ## 📌 Java & Spring
 - [웹 어플리케이션 이해](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/%EC%9B%B9%20%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98%20%EC%9D%B4%ED%95%B4.md)
 - [서블릿](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/servlet.md)
-- [JPA와 Hibernate]
+- [JPA와 Hibernate](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/JPA%26Hibernate.md)
 - [JSP](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/JSP.md)
 - [MVC 패턴](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/MVC%20%ED%8C%A8%ED%84%B4.md)
 - [PSA, IoC, AOP, POJO](https://github.com/wjdansrl7/2024_CS_STUDY/blob/master/Spring/POJO%2C%20DI%2C%20AOP%2C%20PSA.md)
