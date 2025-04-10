@@ -18,6 +18,7 @@
 ## 구성방법
 
 1. Active-Active
+
 ![Untitled](https://github.com/wjdansrl7/2024_CS_STUDY/assets/48114924/f2efe7ff-9b3a-46dc-86e2-2537921d64b1)
 
 - Cluster를 구성하는 Component를 동시에 가동
